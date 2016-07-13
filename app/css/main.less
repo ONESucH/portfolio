@@ -2,6 +2,8 @@
 @colorText: #848577;
 @white: #fff;
 @bkgColor: #1F062E;
+@orange: orange;
+@border-bottom: #9C9859;
 
 * {
   padding: 0;
@@ -30,42 +32,44 @@ a {
   height: 120px;
   line-height: 50px;
   .menu-line-name {
-    display: inline-block;
+    display: block;
     height: 10px;
-  }
-}
+    position: relative;
 
-.menu li {
-  display: inline-block;
-  list-style: none;
-  width: 150px;
-  height: 100%;
-  line-height: 120px;
-  font-size: 14px;
-  text-align: center;
-  position: relative;
-  cursor: pointer;
-  &:hover {
-    top: -5px;
-    border-top: 5px solid @colorIcons;
-    border-bottom: 5px solid @colorIcons;
+  }
+  & li {
+    display: inline-block;
+    list-style: none;
+    width: 150px;
+    height: 100%;
+    line-height: 120px;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+      top: -5px;
+      border-top: 5px solid @colorIcons;
+      border-bottom: 5px solid @colorIcons;
+    }
   }
 }
 
 .right-menu {
   float: right;
   width: 175px;
-  height: 427px;
+  height:auto;
   position: relative;
-  border: 1px solid white;
+  border: 1px solid @white;
   border-radius: 3px;
   font-family: italic;
   & img {
+    height: 145px;
     max-width: 175px;
     max-height: 130px;
   }
   & h1 {
-    background: white;
+    background: @white;
     line-height: 46px;
     padding: 13px 0 0 13px;
   }
@@ -74,18 +78,18 @@ a {
     padding-left: 18px;
   }
   & h3 {
-    background: white;
+    background: @white;
     padding: 0 0 12px 18px;
   }
   & ul li {
     list-style: none;
-    background: white;
+    background: @white;
     line-height: 50px;
     height: 50px;
     font-size: 1em;
   }
   & ul li:nth-child(2n+1) {
-    background: silver;
+    background: @colorText;
   }
   .span-number {
     float: right;
@@ -102,12 +106,48 @@ a {
   margin-top: 28px;
   width: 901px;
   height: 500px;
-  background: white;
+  background: @white;
   .carousel-apple {
     width: 600px;
     height: 408px;
-    background: silver;
+    background: @white;
     border-top-left-radius: 5px;
-    border-top: 4px solid orange;
+    border-top: 5px solid @orange;
+    padding: 52px 0 0 40px;
+    & img {
+      max-width: 280px;
+      max-height: 408px;
+      float: right;
+      position: relative;
+    }
+  }
+  .fresh-start {
+    width: 321px;
+    float: left;
+    text-align: center;
+    & h1 {
+      font-family: 'Monoton', cursive;
+      color: #9C9859;
+      text-align: left;
+      font-size: 2.5em;
+      font-weight: 100;
+      padding: 5px 0 0 7px;
+    }
+    & h2 {
+      padding: 7px 0 0 2px;
+      text-align: left;
+      font-size: 1em;
+      color: #ED3809;
+      border-bottom: 1px solid @border-bottom;
+    }
+    & p {
+      text-align: left;
+      padding: 20px 80px 15px 5px;
+    }
+    & i {
+      padding: 0 3px 0 5px;
+      float: left;
+      color: black;
+    }
   }
 }
