@@ -90,39 +90,42 @@ a {
   position: relative;
   border-radius: 5px;
   margin-top: 28px;
-  width: 901px;
+  width: 900px;
   height: 500px;
   background: #fff;
 }
 .main-container .carousel-apple {
+  float: left;
   width: 600px;
   height: 408px;
   background: #fff;
   border-top-left-radius: 5px;
   border-top: 5px solid orange;
-  padding: 52px 0 0 40px;
 }
 .main-container .carousel-apple img {
+  display: inline-block;
   max-width: 280px;
-  max-height: 408px;
+  max-height: 407px;
   float: right;
   position: relative;
 }
 .main-container .fresh-start {
-  width: 321px;
+  padding: 52px 0 0 40px;
+  width: 240px;
   float: left;
   text-align: center;
 }
-.main-container .fresh-start h1 {
+.main-container .fresh-start .Natural-Food {
   font-family: 'Monoton', cursive;
   color: #9C9859;
   text-align: left;
   font-size: 2.5em;
   font-weight: 100;
-  padding: 5px 0 0 7px;
+  padding: 35px 0 0 7px;
+  line-height: 41px;
 }
 .main-container .fresh-start h2 {
-  padding: 7px 0 0 2px;
+  padding: 8px 0 0 3px;
   text-align: left;
   font-size: 1em;
   color: #ED3809;
@@ -130,10 +133,20 @@ a {
 }
 .main-container .fresh-start p {
   text-align: left;
-  padding: 20px 80px 15px 5px;
+  padding: 3px 5px 15px 6px;
+  font-size: 0.9em;
+  line-height: 21px;
 }
 .main-container .fresh-start i {
   padding: 0 3px 0 5px;
   float: left;
   color: black;
+}
+.main-container .right-one-menu {
+  width: 300px;
+  height: 246px;
+  float: right;
+  position: relative;
+  background-image: url(../img/main-body/chili.png);
+  border-top: 5px solid #C3986A;
 }
