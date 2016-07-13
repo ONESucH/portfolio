@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "description": "My first commit",
+  "main": "index.js",
+  "authors": [
+    "zidein <zidein07@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ONESucH/portfolio",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "jquery": "~3.0.0",
+    "lodash": "~4.13.1",
+    "font-awesome": "^4.6.3",
+    "less": "^2.7.1",
+    "gulp": "^3.9.1"
+  }
+}

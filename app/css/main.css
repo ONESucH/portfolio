@@ -22,9 +22,7 @@ a {
   line-height: 50px;
 }
 .menu .menu-line-name {
-  display: block;
-  position: relative;
-  top: -90px;
+  display: inline-block;
   height: 10px;
 }
 .menu li {
