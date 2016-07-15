@@ -1,9 +1,9 @@
 {
-  "name": "portfolio",
+  "name": "bower install",
   "description": "My first commit",
   "main": "index.js",
   "authors": [
-    "zidein <zidein07@gmail.com>"
+    "onesuch <onesuch07@gmail.com>"
   ],
   "license": "ISC",
   "homepage": "https://github.com/ONESucH/portfolio",
