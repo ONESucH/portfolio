@@ -22,7 +22,7 @@ a {
 }
 
 .container {
-  padding: 111px 38px 0 125px;
+  padding: 111px 54px 0 125px;
   min-width: 1100px;
 }
 
@@ -39,7 +39,7 @@ a {
     height: 10px;
     position: relative;
   }
-  & li {
+  li {
     display: inline-block;
     list-style: none;
     margin: auto;
@@ -56,10 +56,10 @@ a {
       border-top: 5px solid @colorIcons;
       border-bottom: 5px solid @colorIcons;
     }
-    & a:hover {
+    a:hover {
       color: @colorIcons;
     }
-    & a {
+    a {
       color: @colorText;
     }
   }
@@ -73,32 +73,32 @@ a {
   border: 1px solid @white;
   border-radius: 3px;
   font-family: italic;
-  & img {
+  img {
     height: 145px;
     max-width: 175px;
     max-height: 130px;
   }
-  & h1 {
+  h1 {
     background: @white;
     line-height: 46px;
     padding: 13px 0 0 13px;
   }
-  & p {
+  p {
     font-size: 0.8em;
     padding-left: 18px;
   }
-  & h3 {
+  h3 {
     background: @white;
     padding: 0 0 12px 18px;
   }
-  & ul li {
+  ul li {
     list-style: none;
     background: @white;
     line-height: 50px;
     height: 50px;
     font-size: 1em;
   }
-  & ul li:nth-child(2n+1) {
+  ul li:nth-child(2n+1) {
     background: @colorText;
   }
   .span-number {
@@ -111,11 +111,26 @@ a {
 }
 
 .right-menu-bottom-eats-kal {
+  position: relative;
+  margin-top: 24px;
+  float: right;
+  width: 176px;
+  height: 197px;
+  background: white;
+  border-radius: 5px;
+  img {
+    width: 176px;
+    max-width: 176px;
+    max-height: 107px;
+  }
+  .kal-information {
 
+  }
 }
 
 .main-container {
   position: relative;
+  float: left;
   border-radius: 5px;
   margin-top: 28px;
   width: 900px;
@@ -128,7 +143,7 @@ a {
     background: @white;
     border-top-left-radius: 5px;
     border-top: 5px solid @orange;
-    & img {
+    img {
       display: inline-block;
       max-width: 280px;
       max-height: 407px;
@@ -141,7 +156,7 @@ a {
     width: 240px;
     float: left;
     text-align: center;
-    & .Natural-Food {
+    .Natural-Food {
       font-family: 'Monoton', cursive;
       color: #9C9859;
       text-align: left;
@@ -150,20 +165,20 @@ a {
       padding: 35px 0 0 7px;
       line-height: 41px;
     }
-    & h2 {
+    h2 {
       padding: 8px 0 0 3px;
       text-align: left;
       font-size: 1em;
       color: #ED3809;
       border-bottom: 1px solid @border-bottom;
     }
-    & p {
+    p {
       text-align: left;
       padding: 3px 5px 15px 6px;
       font-size: 0.9em;
       line-height: 21px;
     }
-    & i {
+    i {
       padding: 0 3px 0 5px;
       float: left;
       color: black;
@@ -187,15 +202,14 @@ a {
     display: inline-block;
     float: left;
     text-align: center;
-    border: 1px solid orange;
     .three-blocks {
       float: left;
       background: #AEAFA1;
-      padding: 12px 56px 12px 42px;
+      padding: 13px 57px 13px 42px;
       border-right: 1px solid silver;
       width: 200px;
       height: 61px;
-      & i {
+      i {
         border-radius: 50%;
         padding: 1px;
         border: 4px solid #CECEC4;
@@ -206,7 +220,7 @@ a {
         font-size: 1.6em;
         line-height: 50px;
       }
-      & p {
+      p {
         float: right;
         font-size: 0.9em;
         padding-top: 20px;
