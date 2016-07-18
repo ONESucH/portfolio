@@ -114,17 +114,42 @@ a {
   position: relative;
   margin-top: 24px;
   float: right;
-  width: 176px;
-  height: 197px;
-  background: white;
+  width: 174px;
+  height: 196px;
+  background: #fff;
   border-radius: 5px;
   img {
     width: 176px;
     max-width: 176px;
     max-height: 107px;
+    margin-bottom: -4px;
   }
   .kal-information {
-
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-right: 1px solid silver;
+    list-style: none;
+    text-align: center;
+  }
+  .kal-information:nth-child(2) {
+    border-right: none;
+  }
+  li {
+    float: left;
+    width: 86px;
+    height: 95px;
+    color: #979888;
+    padding-top: 21px;
+    line-height: 20px;
+  }
+  span {
+    display: block;
+    color: #4e4e4e;
+    font-size: 1.3em;
+    font-weight: 800;
   }
 }
 
