@@ -86,7 +86,7 @@ a {
   font-size: 1em;
 }
 .right-menu ul li:nth-child(2n+1) {
-  background: #848577;
+  background: #f5f5f5;
 }
 .right-menu .span-number {
   float: right;
@@ -146,7 +146,7 @@ a {
   height: 500px;
   background: #fff;
 }
-.main-container .carousel-apple {
+.carousel-apple {
   float: left;
   width: 600px;
   height: 408px;
@@ -154,20 +154,20 @@ a {
   border-top-left-radius: 5px;
   border-top: 5px solid orange;
 }
-.main-container .carousel-apple img {
+.carousel-apple img {
   display: inline-block;
   max-width: 280px;
   max-height: 407px;
   float: right;
   position: relative;
 }
-.main-container .fresh-start {
+.fresh-start {
   padding: 52px 0 0 40px;
   width: 240px;
   float: left;
   text-align: center;
 }
-.main-container .fresh-start .Natural-Food {
+.fresh-start .Natural-Food {
   font-family: 'Monoton', cursive;
   color: #9C9859;
   text-align: left;
@@ -176,44 +176,44 @@ a {
   padding: 35px 0 0 7px;
   line-height: 41px;
 }
-.main-container .fresh-start h2 {
+.fresh-start h2 {
   padding: 8px 0 0 3px;
   text-align: left;
   font-size: 1em;
   color: #ED3809;
   border-bottom: 1px solid #9C9859;
 }
-.main-container .fresh-start p {
+.fresh-start p {
   text-align: left;
   padding: 3px 5px 15px 6px;
   font-size: 0.9em;
   line-height: 21px;
 }
-.main-container .fresh-start i {
+.fresh-start i {
   padding: 0 3px 0 5px;
   float: left;
   color: black;
 }
-.main-container .right-one-menu {
+.right-one-menu {
   width: 300px;
   height: 241px;
   float: right;
   background-image: url(../img/main-body/chili.png);
   border-top: 5px solid #C3986A;
 }
-.main-container .right-two-menu {
+.right-two-menu {
   width: 300px;
   height: 161px;
   float: right;
   background-image: url(../img/right-menu/spogetti.png);
   border-top: 5px solid #5FA430;
 }
-.main-container .bottom-container-and-three-blocks {
+.bottom-container-and-three-blocks {
   display: inline-block;
   float: left;
   text-align: center;
 }
-.main-container .bottom-container-and-three-blocks .three-blocks {
+.bottom-container-and-three-blocks .three-blocks {
   float: left;
   background: #AEAFA1;
   padding: 13px 57px 13px 42px;
@@ -221,7 +221,7 @@ a {
   width: 200px;
   height: 61px;
 }
-.main-container .bottom-container-and-three-blocks .three-blocks i {
+.bottom-container-and-three-blocks .three-blocks i {
   border-radius: 50%;
   padding: 1px;
   border: 4px solid #CECEC4;
@@ -232,9 +232,15 @@ a {
   font-size: 1.6em;
   line-height: 50px;
 }
-.main-container .bottom-container-and-three-blocks .three-blocks p {
+.bottom-container-and-three-blocks .three-blocks p {
   float: right;
   font-size: 0.9em;
   padding-top: 20px;
   color: #fff;
+}
+.bottom-container-and-three-blocks div:nth-child(1) {
+  border-bottom-left-radius: 5px;
+}
+.bottom-container-and-three-blocks div:nth-child(3) {
+  border-bottom-right-radius: 5px;
 }
