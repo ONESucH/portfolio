@@ -1,246 +1,226 @@
 * {
-  padding: 0;
   margin: 0;
-  font-family: sans-serif;
-}
-body {
-  background: #1F062E;
+  padding: 0;
 }
 a {
   text-decoration: none;
 }
 .container {
-  padding: 111px 54px 0 125px;
-  min-width: 1100px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #4E0A39;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  padding: 7.7% 3.3% 0 9.6%;
 }
-.menu {
-  background: #fff;
-  border-radius: 5px;
-  font-size: 0;
-  width: 900px;
-  height: 120px;
-  line-height: 50px;
-}
-.menu .menu-line-name {
-  vertical-align: bottom;
-  display: block;
-  height: 10px;
+.top-menu {
   position: relative;
+  border-radius: 3px;
+  width: auto;
+  height: auto;
 }
-.menu li {
+.top-menu li {
   display: inline-block;
-  list-style: none;
-  margin: auto;
-  padding: 25px 0;
-  width: 150px;
-  height: 100%;
-  line-height: 25px;
-  font-size: 14px;
   text-align: center;
-  position: relative;
+  float: left;
+  border-right: 1px solid silver;
+  width: 13.55%;
+  height: 100%;
+  padding: 2.4% 0 1.6% 0;
   cursor: pointer;
+  background: white;
+  line-height: 184%;
 }
-.menu li:hover {
-  top: -5px;
+.top-menu li i {
+  color: #848577;
+  font-size: 265%;
+}
+.top-menu li p {
+  color: #848577;
+  font-weight: 100;
+}
+.top-menu li:hover {
   border-top: 5px solid #e92d00;
   border-bottom: 5px solid #e92d00;
-}
-.menu li a:hover {
+  padding-top: 1.6%;
   color: #e92d00;
 }
-.menu li a {
-  color: #848577;
+.top-menu li:hover p {
+  color: #e92d00;
 }
-.right-menu {
-  float: right;
-  width: 175px;
-  height: auto;
+.top-menu li:hover i {
+  color: #e92d00;
+}
+.top-menu li:nth-child(1) {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.top-menu li:nth-child(6) {
+  border-right: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.right-top-menu {
   position: relative;
-  border: 1px solid #fff;
+  width: 15.9%;
   border-radius: 3px;
-  font-family: italic;
+  height: auto;
+  background: white;
+  float: right;
 }
-.right-menu img {
-  height: 145px;
-  max-width: 175px;
-  max-height: 130px;
+.right-top-menu img {
+  width: 100%;
+  min-height: 133px;
 }
-.right-menu h1 {
-  background: #fff;
-  line-height: 46px;
-  padding: 13px 0 0 13px;
+.right-top-menu h1 {
+  padding: 7.8% 0 0 8%;
+  font-size: 190%;
 }
-.right-menu p {
-  font-size: 0.8em;
-  padding-left: 18px;
+.right-top-menu p {
+  padding: 0 0 12% 10%;
+  font-size: 120%;
+  font-weight: 900;
 }
-.right-menu h3 {
-  background: #fff;
-  padding: 0 0 12px 18px;
-}
-.right-menu ul li {
+.right-top-menu ul {
   list-style: none;
-  background: #fff;
-  line-height: 50px;
-  height: 50px;
-  font-size: 1em;
 }
-.right-menu ul li:nth-child(2n+1) {
+.right-top-menu li {
+  width: 82%;
+  height: auto;
+  padding: 8% 9% 10% 9%;
+  float: left;
+  font-size: 101%;
+}
+.right-top-menu span {
+  padding-right: 2%;
+  float: right;
+  width: 26%;
+}
+.right-top-menu li:nth-child(2n+1) {
   background: #f5f5f5;
 }
-.right-menu .span-number {
-  float: right;
-  font-weight: 100;
-  width: 40px;
-  font-size: 0.8em;
-  padding-right: 12px;
-}
-.right-menu-bottom-eats-kal {
-  position: relative;
-  margin-top: 24px;
-  float: right;
-  width: 174px;
-  height: 196px;
-  background: #fff;
-  border-radius: 5px;
-}
-.right-menu-bottom-eats-kal img {
-  width: 176px;
-  max-width: 176px;
-  max-height: 107px;
-  margin-bottom: -4px;
-}
-.right-menu-bottom-eats-kal .kal-information {
-  display: inline-block;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  border-right: 1px solid silver;
-  list-style: none;
-  text-align: center;
-}
-.right-menu-bottom-eats-kal .kal-information:nth-child(2) {
-  border-right: none;
-}
-.right-menu-bottom-eats-kal li {
-  float: left;
-  width: 86px;
-  height: 95px;
-  color: #979888;
-  padding-top: 21px;
-  line-height: 20px;
-}
-.right-menu-bottom-eats-kal span {
-  display: block;
-  color: #4e4e4e;
-  font-size: 1.3em;
-  font-weight: 800;
-}
 .main-container {
+  display: block;
   position: relative;
   float: left;
+  width: 81.8%;
+  height: 61.9%;
   border-radius: 5px;
-  margin-top: 28px;
-  width: 900px;
-  height: 500px;
-  background: #fff;
+  margin-top: 2.6%;
+  background: white;
 }
-.carousel-apple {
+.one-menu {
+  display: block;
   float: left;
-  width: 600px;
-  height: 408px;
-  background: #fff;
-  border-top-left-radius: 5px;
-  border-top: 5px solid orange;
-}
-.carousel-apple img {
-  display: inline-block;
-  max-width: 280px;
-  max-height: 407px;
-  float: right;
   position: relative;
+  width: 66.8%;
+  border-top: 5px solid orange;
+  border-top-left-radius: 5px;
 }
-.fresh-start {
-  padding: 52px 0 0 40px;
-  width: 240px;
-  float: left;
-  text-align: center;
-}
-.fresh-start .Natural-Food {
-  font-family: 'Monoton', cursive;
-  color: #9C9859;
-  text-align: left;
-  font-size: 2.5em;
+.one-menu h2 {
+  margin: 9.5% 0 0 7.6%;
   font-weight: 100;
-  padding: 35px 0 0 7px;
-  line-height: 41px;
+  color: red;
+  font-size: 1.2em;
+  border-bottom: 1px solid silver;
+  width: 35%;
+  padding-bottom: 2%;
 }
-.fresh-start h2 {
-  padding: 8px 0 0 3px;
-  text-align: left;
-  font-size: 1em;
-  color: #ED3809;
-  border-bottom: 1px solid #9C9859;
-}
-.fresh-start p {
-  text-align: left;
-  padding: 3px 5px 15px 6px;
-  font-size: 0.9em;
-  line-height: 21px;
-}
-.fresh-start i {
-  padding: 0 3px 0 5px;
-  float: left;
+.one-menu h2 i {
+  font-size: 0.7em;
+  padding: 3%;
   color: black;
 }
-.right-one-menu {
-  width: 300px;
-  height: 241px;
-  float: right;
-  background-image: url(../img/main-body/chili.png);
-  border-top: 5px solid #C3986A;
+.one-menu h1 {
+  font-family: 'Monoton';
+  line-height: 1em;
+  color: #9a985d;
+  margin: 3% 0 0 8%;
+  font-size: 2.5em;
+  width: 45%;
 }
-.right-two-menu {
-  width: 300px;
-  height: 161px;
-  float: right;
-  background-image: url(../img/right-menu/spogetti.png);
-  border-top: 5px solid #5FA430;
+.one-menu p {
+  margin: 3% 0 0 8%;
+  width: 38%;
+  line-height: 1.3em;
 }
-.bottom-container-and-three-blocks {
+.one-menu img {
+  width: 46%;
+  height: auto;
+  float: right;
+}
+.two-menu {
+  float: right;
+  width: 33.2%;
+  height: 47.5%;
+  border-top: 5px solid green;
+  border-top-right-radius: 5px;
+  text-align: center;
+  background: url(../img/main-body/chili.jpg);
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+.two-menu h2 {
+  color: white;
+  padding-top: 7.8%;
+}
+.two-menu p {
+  font-size: 1.2em;
+  color: white;
+}
+.two-menu input {
+  margin-top: 5%;
+  border-radius: 5px;
+  font-size: 100%;
+  padding: 3.1%;
+  color: green;
+}
+.three-menu {
+  float: right;
+  width: 33.2%;
+  height: 32.7%;
+  border-top: 5px solid green;
+  background: url(../img/main-body/spogetti.png);
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+.bottom-menu {
+  display: inline-block;
+  width: 100%;
+  height: 17.6%;
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.bottom-menu li {
+  border-right: 1px solid silver;
+  background: green;
   display: inline-block;
   float: left;
-  text-align: center;
+  width: 33.224%;
+  height: 60%;
+  padding: 2% 0 2% 0;
 }
-.bottom-container-and-three-blocks .three-blocks {
-  float: left;
-  background: #AEAFA1;
-  padding: 13px 57px 13px 42px;
-  border-right: 1px solid silver;
-  width: 200px;
-  height: 61px;
-}
-.bottom-container-and-three-blocks .three-blocks i {
-  border-radius: 50%;
-  padding: 1px;
-  border: 4px solid #CECEC4;
-  background: white;
-  color: #CECEC4;
-  width: 45px;
-  height: 45px;
+.bottom-menu i {
   font-size: 1.6em;
-  line-height: 50px;
+  border: 5px solid silver;
+  border-radius: 50%;
+  padding: 2%;
+  background: white;
+  margin-right: 5%;
 }
-.bottom-container-and-three-blocks .three-blocks p {
-  float: right;
-  font-size: 0.9em;
-  padding-top: 20px;
-  color: #fff;
-}
-.bottom-container-and-three-blocks div:nth-child(1) {
+.bottom-menu li:nth-child(1) {
   border-bottom-left-radius: 5px;
 }
-.bottom-container-and-three-blocks div:nth-child(3) {
+.bottom-menu li:nth-child(3) {
   border-bottom-right-radius: 5px;
 }
