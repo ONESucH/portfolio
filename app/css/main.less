@@ -9,18 +9,22 @@ a {
   text-decoration: none;
 }
 
+body {
+  background: #4E0A39;
+}
+
 .container {
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  background: #4E0A39;
   background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   padding: 7.7% 3.3% 0 9.6%;
+  max-width: 1280px;
 }
 
 .top-menu {
@@ -119,7 +123,6 @@ a {
   height: 61.9%;
   border-radius: 5px;
   margin-top: 2.6%;
-  background: @white;
 }
 
 .one-menu {
@@ -129,6 +132,7 @@ a {
   width: 66.8%;
   border-top: 5px solid orange;
   border-top-left-radius: 5px;
+  background: @white;
   h2 {
     margin: 9.5% 0 0 7.6%;
     font-weight: 100;
@@ -157,8 +161,11 @@ a {
     line-height: 1.3em;
   }
   img {
+    position: relative;
     width: 46%;
-    height: auto;
+    height: 100%;
+    max-width: 46%;
+    background-size: cover;
     float: right;
   }
 }
@@ -186,8 +193,9 @@ a {
   input {
     margin-top: 5%;
     border-radius: 5px;
-    font-size: 100%;
-    padding: 3.1%;
+    width: 65%;
+    height: auto;
+    padding: 4.5%;
     color: green;
   }
 }
@@ -197,41 +205,274 @@ a {
   width: 33.2%;
   height: 32.7%;
   border-top: 5px solid green;
-  background: url(../img/main-body/spogetti.png);
   background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .bottom-menu {
-  display: inline-block;
+  display: block;
+  float: inherit;
   width: 100%;
-  height: 17.6%;
+  height: 10.6%;
   text-align: center;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   li {
-    border-right: 1px solid silver;
-    background: green;
     display: inline-block;
+    border-right: 1px solid silver;
+    background: #989989;
+    color: @white;
+    font-weight: 500;
     float: left;
     width: 33.224%;
-    height: 60%;
-    padding: 2% 0 2% 0;
+    height: 33%;
+    padding: 3% 0 5% 0;
   }
   i {
     font-size: 1.6em;
-    border: 5px solid silver;
+    border: 5px solid #D2D2CA;
+    color: #989989;
     border-radius: 50%;
     padding: 2%;
     background: @white;
     margin-right: 5%;
+  }
+  li:nth-child(3) {
+    border: none;
   }
   li:nth-child(1) {
     border-bottom-left-radius: 5px;
   }
   li:nth-child(3) {
     border-bottom-right-radius: 5px;
+  }
+}
+
+.right-bottom-two-menu {
+  display: block;
+  position: relative;
+  float: right;
+  width: 15.9%;
+  height: auto;
+  background: @white;
+  margin-top: 2.3%;
+  border-radius: 5px;
+  img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: 107px;
+  }
+  ul {
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+    text-align: center;
+    border-right: 1px solid silver;
+    float: left;
+    width: 49%;
+    height: 100%;
+    padding: 11% 0;
+  }
+  li:nth-child(2) {
+    border: none;
+  }
+  span {
+    display: inherit;
+    font-size: 1.4em;
+    font-weight: 900;
+  }
+}
+
+/* Ноутбуки */
+@media (max-width: 1279px) {
+  .main-container {
+    height: 78.5%;
+    border-radius: 5px;
+  }
+
+  .one-menu {
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+    float: none;
+    img {
+      width: 50%;
+      height: 100%;
+    }
+    h2 {
+      margin-top: 1%;
+      margin-left: 4%;
+      text-align: center;
+    }
+    h1 {
+      margin-top: 1%;
+      margin-left: 4%;
+      text-align: center;
+    }
+    p {
+      margin-top: 1%;
+      margin-left: 4%;
+      text-align: center;
+      padding-bottom: 2%;
+    }
+  }
+
+  .two-menu {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 35%;
+    border-radius: 0;
+  }
+
+  .three-menu {
+    width: 50%;
+    height: 35%;
+    li {
+      display: inherit;
+    }
+  }
+
+  .bottom-menu {
+    width: 100%;
+    height: 6%;
+    li {
+      width: 33.16%;
+      height: 70%;
+    }
+  }
+}
+
+/* Планшеты */
+@media (max-width: 950px) {
+  .main-container {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  .right-top-menu li {
+    width: 93%;
+    height: auto;
+    padding: 10% 3% 10px 4%;
+    float: left;
+    font-size: 80%;
+    span {
+      padding-right: 0;
+      float: right;
+      width: 36%;
+    }
+    h1 {
+      padding: 7.8% 0 0 8%;
+      font-size: 150%;
+    }
+  }
+
+  .bottom-menu {
+    li {
+      padding: 9% 0;
+      width: 33%;
+      height: 100%;
+    }
+  }
+}
+
+/* Телефоны */
+@media (max-width: 650px) {
+  .container {
+    padding: 5%;
+  }
+
+  .top-menu {
+    width: 100%;
+    height: 6%;
+    margin-bottom: 5%;
+    li {
+      font-size: 0.6em;
+      padding: 2% 1.4% 0 1.4%;
+      &:hover {
+        border-top: 2px solid red;
+        border-bottom: 2px solid red;
+      }
+      i {
+        font-size: 135%;
+      }
+    }
+  }
+
+  .right-top-menu {
+    display: inherit;
+    width: auto;
+    height: auto;
+    float: none;
+    margin-bottom: 5%;
+    p {
+      text-align: center;
+      padding: 0 0 3% 8%;
+      font-size: 120%;
+      font-weight: 900;
+    }
+    li {
+      width: 93.2%;
+      height: auto;
+      padding: 6% 3% 0 3.8%;
+      float: left;
+      font-size: 110%;
+      background: @white;
+      & span {
+        font-size: 140%;
+        width: 22%;
+      }
+    }
+    h1 {
+      text-align: center;
+      padding: 1% 0;
+      font-size: 270%;
+    }
+  }
+
+  .bottom-menu {
+    li {
+      padding: 9% 0;
+      width: 33%;
+      height: 100%;
+    }
+  }
+
+  .one-menu {
+    width: 100%;
+    height: 40%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .main-container {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .right-bottom-two-menu {
+    margin: -50px 0 3% 0;
+    width: 100%;
+    height: 18%;
+     li {
+      display: inline-block;
+      float: left;
+      width: 49%;
+      height: 100%;
+      padding: 0;
+    }
   }
 }
