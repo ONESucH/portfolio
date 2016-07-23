@@ -130,6 +130,7 @@ body {
   float: left;
   position: relative;
   width: 66.8%;
+  height: 81.2%;
   border-top: 5px solid orange;
   border-top-left-radius: 5px;
   background: @white;
@@ -279,17 +280,227 @@ body {
     float: left;
     width: 49%;
     height: 100%;
-    padding: 11% 0;
+    padding: 14% 0 15% 0;
   }
   li:nth-child(2) {
     border: none;
   }
   span {
+    margin-bottom: 5%;
+    line-height: 20px;
     display: inherit;
     font-size: 1.4em;
     font-weight: 900;
   }
 }
+
+.container-contact-form {
+  position: relative;
+  float: left;
+  background: @white;
+  margin-top: 2.2%;
+  width: 36.2%;
+  height: auto;
+  border-radius: 5px;
+  h1 {
+    font-size: 1.5em;
+    padding: 4.9% 0 4.5% 6%;
+    width: auto;
+    height: 20%;
+    color: @white;
+    background: #5fa430;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 6.5%;
+  }
+  p {
+    margin: 0 10% 0 9%;
+    color: #646543;
+    font-weight: 600;
+  }
+  input {
+    width: 75%;
+    border: 2px solid silver;
+    border-radius: 5px;
+    margin: 2.6% 10% 5% 8.9%;
+    padding: 3% 0 4.3% 5%;
+    color: #196c98;
+    font-weight: 900;
+    cursor: pointer;
+  }
+}
+
+.container-message {
+  display: block;
+  padding: 5%;
+  width: 70%;
+  height: 92px;
+  border-radius: 5px;
+  margin: 2% 10% 8.5% 9%;
+  border: 2px solid silver;
+}
+
+.bot-button {
+  display: inline-block;
+  background: #f2f2f0;
+  padding: 3.5% 10% 5.8% 10%;
+  width: 80%;
+  height: auto;
+  border-radius: 5px;
+  button {
+    cursor: pointer;
+    border: none;
+    background: #c3c3c3;
+    width: 35%;
+    font-size: 0.9em;
+    font-weight: 900;
+    color: @white;
+    height: 50px;
+    border-radius: 5px;
+    &:nth-child(2) {
+      width: 56.5%;
+      height: 50px;
+      margin-left: 7%;
+      background: #63a633;
+    }
+  }
+}
+
+.main-right-bottom-menu {
+  position: relative;
+  float: right;
+  margin: 2% 0 2% 2.2%;
+  background: @white;
+  width: 61.5%;
+  height: 39%;
+  border-radius: 5px;
+  padding-bottom: 6%;
+  img {
+    width: 100%;
+    height: 60%;
+  }
+  h1 {
+    font-family: 'Monoton';
+    width: 30.5%;
+    float: left;
+    height: 45%;
+    color: #9a985d;
+    font-size: 2.5em;
+    font-weight: 400;
+    padding: 6.5% 5.5% 0 5.5%;
+    border-right: 1px solid silver;
+    line-height: 45px;
+  }
+  img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  p {
+    width: 46%;
+    height: auto;
+    float: left;
+    text-align: center;
+    padding: 6.9% 1% 0 3%;
+  }
+  h4 {
+    width: 55%;
+    height: 10%;
+    float: left;
+    color: red;
+    i {
+      font-size: 0.8em;
+      padding: 0 2% 0 10%;
+    }
+  }
+}
+
+.pea-soup {
+  display: inline-block;
+  position: relative;
+  float: right;
+  width: 61.5%;
+  height: 20%;
+  border-radius: 5px;
+  margin-bottom: 5%;
+  background: @white;
+  i {
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #e13527;
+    color: #cc170e;
+    font-size: 5em;
+    padding: 6.3% 0.3% 6.3% 0;
+    text-align: center;
+    width: 25.5%;
+    height: auto;
+    float: right;
+  }
+}
+
+.number {
+  float: left;
+  width: 20%;
+  height: 99%;
+  text-align: center;
+  span {
+    color: #5e5e5e;
+    line-height: 160%;
+    font-size: 6em;
+    font-weight: 900;
+  }
+  p {
+    color: #959595;
+    margin-top: -23%;
+    line-height: 0;
+  }
+}
+
+.left-image-kapuchino {
+  border-right: 1px solid silver;
+  float: left;
+  width: 41.5%;
+  height: 100%;
+  img {
+    margin: 15% 0 0 10%;
+    width: 28%;
+    height: auto;
+    float: left;
+    border-radius: 50%;
+  }
+  h1 {
+    color: #959595;
+    float: right;
+    padding-right: 13%;
+    padding-top: 20%;
+    display: inherit;
+  }
+  h4 {
+    color: #959595;
+    float: right;
+    padding-right: 13%;
+    display: inherit;
+  }
+}
+
+.two-button-pea-soup {
+  float: left;
+  width: 12.5%;
+  height: auto;
+  button {
+    border: none;
+    background: #f2f2f0;
+    cursor: pointer;
+    color: #959595;
+    width: 100%;
+    height: auto;
+    display: block;
+    float: left;
+    padding: 16.2%;
+    font-size: 3em;
+  }
+}
+
 
 /* Ноутбуки */
 @media (max-width: 1279px) {
