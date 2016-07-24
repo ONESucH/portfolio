@@ -165,7 +165,7 @@ body {
   float: right;
   width: 33.2%;
   height: 47.5%;
-  border-top: 5px solid green;
+  border-top: 5px solid #c76700;
   border-top-right-radius: 5px;
   text-align: center;
   background: url(../img/main-body/chili.jpg);
@@ -219,10 +219,14 @@ body {
   background: #989989;
   color: white;
   font-weight: 500;
+  cursor: pointer;
   float: left;
   width: 33.224%;
   height: 33%;
   padding: 3% 0 5% 0;
+}
+.bottom-menu li:hover {
+  background: #848577;
 }
 .bottom-menu i {
   font-size: 1.6em;
@@ -337,10 +341,11 @@ body {
   border: none;
   background: #c3c3c3;
   width: 35%;
+  float: left;
   font-size: 0.9em;
+  height: 50px;
   font-weight: 900;
   color: white;
-  height: 50px;
   border-radius: 5px;
 }
 .bot-button button:nth-child(2) {
@@ -469,6 +474,7 @@ body {
 }
 .two-button-pea-soup button {
   border: none;
+  outline: none;
   background: #f2f2f0;
   cursor: pointer;
   color: #959595;
@@ -484,6 +490,29 @@ body {
   .main-container {
     height: 78.5%;
     border-radius: 5px;
+  }
+  .main-right-bottom-menu {
+    margin-top: 5%;
+  }
+  .main-right-bottom-menu h1 {
+    text-align: center;
+    font-size: 2.1em;
+  }
+  .main-right-bottom-menu h4 {
+    padding: 1% 0 2% 2%;
+  }
+  .pea-soup {
+    height: auto;
+  }
+  .pea-soup h1 {
+    width: 45%;
+  }
+  .pea-soup button {
+    outline: none;
+    font-size: 289%;
+  }
+  .pea-soup i {
+    font-size: 530%;
   }
   .one-menu {
     width: 100%;
@@ -533,6 +562,10 @@ body {
   .bottom-menu li {
     width: 33.16%;
     height: 70%;
+    padding: 2% 0 6% 0;
+  }
+  .container-contact-form {
+    margin-top: 5%;
   }
 }
 /* Планшеты */
@@ -540,6 +573,40 @@ body {
   .main-container {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+  }
+  .main-right-bottom-menu {
+    display: inline;
+    width: 61.6%;
+    height: auto;
+  }
+  .main-right-bottom-menu h1 {
+    text-align: center;
+    width: 40%;
+    height: auto;
+    padding: 2%;
+    font-size: 1.6em;
+  }
+  .main-right-bottom-menu h4 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .main-right-bottom-menu p {
+    float: right;
+    width: 50%;
+    padding: 3.9% 1% 0 3%;
+  }
+  .pea-soup {
+    margin-top: 3%;
+    width: 100%;
+    height: auto;
+  }
+  .pea-soup h1 {
+    padding-right: 10%;
+  }
+  .pea-soup button {
+    outline: none;
+    font-size: 280%;
   }
   .right-top-menu li {
     width: 93%;
@@ -555,12 +622,16 @@ body {
   }
   .right-top-menu li h1 {
     padding: 7.8% 0 0 8%;
-    font-size: 150%;
+    font-size: 50%;
+  }
+  .bot-button button {
+    float: left;
   }
   .bottom-menu li {
-    padding: 9% 0;
-    width: 33%;
+    padding: 3% 1.9% 6% 1.9%;
+    width: 29.2%;
     height: 100%;
+    font-size: 0.8em;
   }
 }
 /* Телефоны */
@@ -570,7 +641,7 @@ body {
   }
   .top-menu {
     width: 100%;
-    height: 6%;
+    height: 4.5%;
     margin-bottom: 5%;
   }
   .top-menu li {
@@ -614,10 +685,18 @@ body {
     padding: 1% 0;
     font-size: 270%;
   }
+  .bottom-menu {
+    width: 100%;
+  }
   .bottom-menu li {
-    padding: 9% 0;
-    width: 33%;
+    text-align: center;
+    padding: 2% 0.2% 5% 0.4%;
+    width: 32.4%;
     height: 100%;
+  }
+  .bottom-menu i {
+    display: inherit;
+    margin: 0 30% 0 30%;
   }
   .one-menu {
     width: 100%;
@@ -629,21 +708,76 @@ body {
     width: 100%;
     height: 100%;
   }
+  .one-menu h1 {
+    font-size: 1.5em;
+  }
   .main-container {
     display: block;
     width: 100%;
-    height: 100%;
+    height: 90%;
   }
   .right-bottom-two-menu {
-    margin: -50px 0 3% 0;
-    width: 100%;
-    height: 18%;
+    right: 20%;
+    margin: -15% 0 20% 0;
+    width: 60%;
+    height: 20%;
   }
   .right-bottom-two-menu li {
     display: inline-block;
     float: left;
     width: 49%;
-    height: 100%;
+    height: auto;
     padding: 0;
+  }
+  .container-contact-form {
+    width: 100%;
+    height: auto;
+    margin-top: -18%;
+  }
+  .container-contact-form button {
+    width: 32%;
+    font-size: 0.9em;
+  }
+  .main-right-bottom-menu {
+    width: 100%;
+    height: auto;
+  }
+  .main-right-bottom-menu h1 {
+    font-size: 1em;
+  }
+  .main-right-bottom-menu h4 {
+    width: 100%;
+    margin-top: 2%;
+    text-align: center;
+  }
+  .pea-soup {
+    width: 100%;
+    height: auto;
+  }
+  .pea-soup img {
+    margin-left: 35%;
+  }
+  .pea-soup h1 {
+    width: 100%;
+    text-align: center;
+    padding-top: 6%;
+    font-size: 1.5em;
+  }
+  .pea-soup h4 {
+    text-align: center;
+  }
+  .pea-soup span {
+    font-size: 5em;
+  }
+  .pea-soup i {
+    line-height: 325%;
+    width: 25%;
+    height: auto;
+    font-size: 2em;
+  }
+  .pea-soup button {
+    display: block;
+    width: 100%;
+    height: 110%;
   }
 }
